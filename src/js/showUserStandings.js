@@ -1,15 +1,30 @@
-const list = document.getElementById("standings");
+const users = userNames.map(data => new User(data));
 
-for (let i = 0; i < 8; i++) {
-    const li = document.createElement("li");
-    const score = document.createElement("span");
+function renderList() {
+    const list = document.getElementById("standings");
+    list.innerHTML = "";
+    const sortedItems = users.slice().sort((a, b) => b.score - a.score);
 
-    li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
-    score.classList.add("badge", "text-bg-primary", "rounded-pill");
-    
-    li.textContent = user[i].name;
-    score.textContent = user[i].score;
+    sortedItems.forEach(item => {
+        const li = document.createElement("li");
+        const score = document.createElement("span");
+        const addScore = document.createElement("button");
 
-    list.appendChild(li);
-    li.appendChild(score);
+        li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
+        score.classList.add("badge", "text-bg-primary", "rounded-pill");
+        addScore.classList.add("btn", "btn-primary", "rounded-pill");
+        
+        li.textContent = item.name;
+        score.textContent = item.score;
+        addScore.textContent = "+";
+        addScore.addEventListener("click", () => {
+            item.addScore();
+            renderList();
+        });
+
+        list.appendChild(li);
+        li.appendChild(score);
+        li.appendChild(addScore);
+    });
 }
+renderList();

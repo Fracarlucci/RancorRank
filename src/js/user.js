@@ -6,7 +6,7 @@ class User {
   }
   
   addScore() {
-    return this.score++;
+    this.score++;
   }
 };
 
@@ -21,5 +21,3 @@ const userNames = [
     ('Lil Gianni'),
     ('Young Morelli')
 ];
-
-const user = userNames.map(data => new User(data));
