@@ -7,6 +7,4 @@ INSERT INTO UTENTE (Name)
             ('Berto 120Zebre'),
             ('Skicicci'),
             ('Lil Gianni'),
-            ('Young Morelli'),
-            ('Vins'),
-            ('Tha Peps');
+            ('Young Morelli');

@@ -22,9 +22,8 @@ class DatabaseHelper{
         $stmt = $this->db->prepare($query);
         $stmt->bind_param('is',$score,$name);
         $stmt->execute();
-        $result = $stmt->get_result();
 
-        return $result->fetch_all(MYSQLI_ASSOC);
+        return $stmt->insert_id;
     }
 
     public function remScore($name, $score) {
@@ -36,8 +35,7 @@ class DatabaseHelper{
         $stmt = $this->db->prepare($query);
         $stmt->bind_param('is',$score,$name);
         $stmt->execute();
-        $result = $stmt->get_result();
 
-        return $result->fetch_all(MYSQLI_ASSOC);
+        return $stmt->insert_id;
     }
 }

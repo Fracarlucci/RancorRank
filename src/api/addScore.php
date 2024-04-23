@@ -3,8 +3,8 @@
     
     $dbh = new DatabaseHelper("localhost", "root", "", "rancorrank", 3306);
 
-    $result = $dbh->getUsers();
+    $userName = $_POST['name'];
+    $score = $_POST['score'];
 
-    header('Content-Type: application/json');
-    echo json_encode($result);
+    $dbh->addScore($userName, $score);
 ?>

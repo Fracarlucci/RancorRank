@@ -1,6 +1,6 @@
 <?php
 require_once 'bootstrap.php';
-$templateParams["utenti"] = $dbh->getUsers();
+// $templateParams["utenti"] = $dbh->getUsers();
 
-// require 'base.php';
+require 'base.php';
 ?>
