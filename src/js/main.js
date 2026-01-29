@@ -1,19 +1,17 @@
-// Static user data for GitHub Pages (replaces database)
 const usersData = [
     { Name: 'Ciccio', Score: 0 },
-    { Name: 'Paolo-Z', Score: 0 },
-    { Name: 'Freddy Caffettino', Score: 0 },
-    { Name: 'Tonno RioMario', Score: 0 },
-    { Name: 'Lio prod.', Score: 0 },
-    { Name: 'Berto 120Zebre', Score: 0 },
-    { Name: 'Skicicci', Score: 0 },
-    { Name: 'Lil Gianni', Score: 0 },
-    { Name: 'Young Morelli', Score: 0 }
+    { Name: 'Zeta', Score: 0 },
+    { Name: 'Accattò', Score: 0 },
+    { Name: 'Tonno', Score: 0 },
+    { Name: 'Lio', Score: 0 },
+    { Name: 'Berto126', Score: 0 },
+    { Name: 'Pippi', Score: 0 },
+    { Name: 'Lil Giallo', Score: 0 },
+    { Name: 'Morelli', Score: 0 }
 ];
 
 const INC_SCORE = 5;
 
-// Store references to DOM elements
 const userElements = new Map();
 
 function createListItem(item, index) {
