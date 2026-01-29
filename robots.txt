@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /src/
+Disallow: /.git/
+
+Sitemap: https://rancorrank.it/sitemap.xml
