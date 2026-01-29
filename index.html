@@ -64,6 +64,11 @@
     <link rel="stylesheet" type="text/css" href="src/style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!-- Google Fonts for Chat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
 </head>
@@ -73,54 +78,86 @@
             <h1 class="m-3 mb-5">RancorRank</h1>
             <div class="row align-items-start gx-lg-3">
                 <div class="col-12 col-lg-3 mt-3 mt-lg-0 order-3 order-lg-1">
-                    <div class="giallo-quotes">
-                        <h5 class="text-warning mb-3">💛 Perle di Saggezza Varie ed Eventuali</h5>
-                        <div class="card bg-warning text-dark mb-3 giallo-card">
-                            <div class="card-body">
-                                <p class="card-text">"La pubblicità ed il supporto hanno un costo"</p>
-                                <footer class="blockquote-footer mt-2">GIALLO</footer>
+                    <div class="chat-container">
+                        <h5 class="text-warning mb-3">Perle di Saggezza Varie ed Eventuali</h5>
+                        <div class="chat-message">
+                            <div class="chat-bubble">
+                                <div class="chat-header">
+                                    <div class="chat-avatar">G</div>
+                                    <span class="chat-sender">GIALLO</span>
+                                    <span class="chat-time">12:30</span>
+                                </div>
+                                <p class="chat-text">"La pubblicità ed il supporto hanno un costo"</p>
                             </div>
                         </div>
-                        <div class="card bg-warning text-dark mb-3 giallo-card">
-                            <div class="card-body">
-                                <p class="card-text">"PERCHÉ TU NON SEI GRUPPO!!"</p>
-                                <footer class="blockquote-footer mt-2">TONNO</footer>
+                        <div class="chat-message">
+                            <div class="chat-bubble">
+                                <div class="chat-header">
+                                    <div class="chat-avatar">T</div>
+                                    <span class="chat-sender">TONNO</span>
+                                    <span class="chat-time">12:35</span>
+                                </div>
+                                <p class="chat-text">"PERCHÉ TU NON SEI GRUPPO!!"</p>
                             </div>
                         </div>
-                        <div class="card bg-warning text-dark mb-3 giallo-card">
-                            <div class="card-body">
-                                <p class="card-text">"Acqua la fess d' mamt!"</p>
-                                <footer class="blockquote-footer mt-2">ACCATTÓ</footer>
+                        <div class="chat-message">
+                            <div class="chat-bubble">
+                                <div class="chat-header">
+                                    <div class="chat-avatar">A</div>
+                                    <span class="chat-sender">ACCATTÓ</span>
+                                    <span class="chat-time">12:40</span>
+                                </div>
+                                <p class="chat-text">"Acqua la fess d' mamt!"</p>
                             </div>
                         </div>
-                        <div class="card bg-warning text-dark mb-3 giallo-card">
-                            <div class="card-body">
-                                <p class="card-text">"Sentendo sentendo sentente... SENTIAMO"</p>
-                                <footer class="blockquote-footer mt-2">BERTO 126</footer>
+                        <div class="chat-message">
+                            <div class="chat-bubble">
+                                <div class="chat-header">
+                                    <div class="chat-avatar">B</div>
+                                    <span class="chat-sender">BERTO 126</span>
+                                    <span class="chat-time">12:45</span>
+                                </div>
+                                <p class="chat-text">"Sentendo sentendo sentente... SENTIAMO"</p>
                             </div>
                         </div>
-                        <div class="card bg-warning text-dark mb-3 giallo-card">
-                            <div class="card-body">
-                                <p class="card-text">"EH BELLISSIMA QUESTA"</p>
-                                <footer class="blockquote-footer mt-2">ZETA</footer>
+                        <div class="chat-message">
+                            <div class="chat-bubble">
+                                <div class="chat-header">
+                                    <div class="chat-avatar">Z</div>
+                                    <span class="chat-sender">ZETA</span>
+                                    <span class="chat-time">12:50</span>
+                                </div>
+                                <p class="chat-text">"EH BELLISSIMA QUESTA"</p>
                             </div>
                         </div>
-                        <div class="card bg-warning text-dark mb-3 giallo-card">
-                            <div class="card-body">
-                                <p class="card-text">"Hai fatto una jellata!"</p>
-                                <footer class="blockquote-footer mt-2">CICCIO</footer>
+                        <div class="chat-message">
+                            <div class="chat-bubble">
+                                <div class="chat-header">
+                                    <div class="chat-avatar">C</div>
+                                    <span class="chat-sender">CICCIO</span>
+                                    <span class="chat-time">12:55</span>
+                                </div>
+                                <p class="chat-text">"Hai fatto una jellata!"</p>
                             </div>
                         </div>
-                        <div class="card bg-warning text-dark mb-3 giallo-card">
-                            <div class="card-body">
-                                <p class="card-text">"Bollici'?"</p>
-                                <footer class="blockquote-footer mt-2">MORELLI</footer>
+                        <div class="chat-message">
+                            <div class="chat-bubble">
+                                <div class="chat-header">
+                                    <div class="chat-avatar">M</div>
+                                    <span class="chat-sender">MORELLI</span>
+                                    <span class="chat-time">13:00</span>
+                                </div>
+                                <p class="chat-text">"Bollici'?"</p>
                             </div>
                         </div>
-                        <div class="card bg-warning text-dark mb-3 giallo-card">
-                            <div class="card-body">
-                                <p class="card-text">"Cazz di Pepe"</p>
-                                <footer class="blockquote-footer mt-2">LIO</footer>
+                        <div class="chat-message">
+                            <div class="chat-bubble">
+                                <div class="chat-header">
+                                    <div class="chat-avatar">L</div>
+                                    <span class="chat-sender">LIO</span>
+                                    <span class="chat-time">13:05</span>
+                                </div>
+                                <p class="chat-text">"Cazz di Pepe"</p>
                             </div>
                         </div>
                     </div>
