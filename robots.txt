@@ -1,6 +1,10 @@
+# robots.txt for RancorRank
+
 User-agent: *
 Allow: /
-Disallow: /src/
-Disallow: /.git/
 
+# Sitemap location
 Sitemap: https://rancorrank.it/sitemap.xml
+
+# Disallow specific paths if any
+# Disallow: /private/
