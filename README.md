@@ -4,4 +4,4 @@
 
 - [rancorrank.it](https://rancorrank.it/)
 - [fracarlucci.github.io/RancorRank](https://fracarlucci.github.io/RancorRank/)
-- [rancor-rank-k2dxjiluw-fracarluccis-projects.vercel.app](https://rancor-rank-k2dxjiluw-fracarluccis-projects.vercel.app)
+- [rancor-rank.vercel.app](https://rancor-rank.vercel.app/)
